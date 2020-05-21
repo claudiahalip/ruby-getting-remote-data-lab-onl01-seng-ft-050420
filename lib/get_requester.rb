@@ -22,7 +22,7 @@ class GetRequester
     
     hash = JSON.parse(get_response_body)
     hash.collect do |n|
-      n["name"]
+      n
     end 
     
   end 
