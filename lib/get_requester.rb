@@ -21,7 +21,7 @@ class GetRequester
   def parse_json 
     
     h = JSON.parse(get_response_body)
-    h.collect do |test|
+    h.collect do |pair|
       h["a"]
     end 
     
