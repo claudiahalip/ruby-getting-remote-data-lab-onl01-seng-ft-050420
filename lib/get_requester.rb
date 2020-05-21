@@ -20,9 +20,9 @@ class GetRequester
    
   def parse_json 
     
-    h = JSON.parse(get_response_body)
-    h.collect do |pair|
-      pair[key]
+    hash = JSON.parse(get_response_body)
+    hash.collect do |n|
+      n["name"]
     end 
     
   end 
