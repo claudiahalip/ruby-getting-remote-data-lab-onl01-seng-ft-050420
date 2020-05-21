@@ -22,7 +22,7 @@ class GetRequester
     
     h = JSON.parse(get_response_body)
     h.collect do |pair|
-      h["a"]
+      pair[key]
     end 
     
   end 
